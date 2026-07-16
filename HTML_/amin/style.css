@@ -1,0 +1,40 @@
+
+.carre_container{
+    width: 400px;
+    height: 200px;
+    background-color: cadetblue;
+    
+}
+
+.carre{
+    position: relative;
+    top: 45%;
+    left: 45%;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    animation: chute 4s ease-in infinite;   
+}
+
+@keyframes chute {
+    0%{
+       width: 50px;
+       background-color: aqua; 
+       
+    }
+    25%{
+        width: 100px;
+        background-color: brown;
+        transform: translate(100px, 100px);
+    }
+    50%{
+        width: 300px;
+        background-color: rgb(229, 255, 0);
+        transform: translate(200px, 200px);
+    }
+    100%{
+        width: 50px;
+        background-color: black;
+        transform: scale(1.2);
+    }
+};
